@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+const chalk = require('chalk');
 class logger {
     warn(text, pjson) {
         let currentdate = new Date().toLocaleString('en-US', {timeZone: 'Europe/Kiev'}).replace(/T/, ' ').replace(/\..+/, '');
@@ -27,4 +27,4 @@ class logger {
 }
 
 
-export {logger};
+module.exports = logger;
